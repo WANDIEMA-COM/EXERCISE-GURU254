@@ -35,176 +35,172 @@
             background: #f97316;
             border-radius: 10px;
         }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
     </style>
 </head>
 <body class="bg-black text-white">
 
-    <!-- Navbar -->
+    <a href="https://wa.me/254759500240?text=Hello%20Wandiema%20Fitness,%20I'm%20interested%20in%20your%20coaching%20programs." target="_blank" class="whatsapp-float bg-[#25D366] w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-3xl text-white"></i>
+    </a>
+
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-black tracking-tighter text-orange-500">NYMNDIEMA</div>
             <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest">
                 <a href="#home" class="hover:text-orange-500 transition">Home</a>
-                <a href="#services" class="hover:text-orange-500 transition">Services</a>
-                <a href="#ads" class="hover:text-orange-500 transition">Ads & Updates</a>
-                <a href="#order" class="hover:text-orange-500 transition">Order Now</a>
+                <a href="#pricing" class="hover:text-orange-500 transition">Pricing</a>
+                <a href="#results" class="hover:text-orange-500 transition">Results</a>
+                <a href="#order" class="hover:text-orange-500 transition">Order</a>
             </div>
             <a href="#order" class="bg-orange-500 text-black px-5 py-2 rounded-full font-bold text-xs hover:bg-white transition uppercase">Get Started</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero-bg h-screen flex items-center pt-20">
         <div class="container mx-auto px-6">
             <div class="max-w-3xl">
                 <span class="text-orange-500 font-bold tracking-[0.3em] uppercase mb-4 block">Elite Performance</span>
                 <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">BEYOND THE <span class="text-orange-500">LIMITS.</span></h1>
-                <p class="text-xl text-gray-400 mb-10 leading-relaxed">Professional fitness coaching, physical education, and tailored nutrition guidance. Your transformation starts with a scientific approach.</p>
+                <p class="text-xl text-gray-400 mb-10 leading-relaxed">Professional fitness coaching, physical education, and tailored nutrition guidance.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#order" class="bg-orange-500 text-black text-center px-10 py-4 rounded-xl font-black text-lg orange-glow transition">BOOK A SESSION</a>
-                    <a href="#services" class="border border-white/20 text-center px-10 py-4 rounded-xl font-black text-lg hover:bg-white hover:text-black transition">OUR SERVICES</a>
+                    <a href="https://wa.me/254759500240" target="_blank" class="border border-white/20 text-center px-10 py-4 rounded-xl font-black text-lg hover:bg-[#25D366] hover:border-[#25D366] transition flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp"></i> CHAT ON WHATSAPP
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="py-24 bg-zinc-950">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black mb-16 uppercase">What We <span class="text-orange-500">Provide</span></h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-10 rounded-3xl text-left hover:border-orange-500/50 transition group">
-                    <div class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition">
-                        <i class="fas fa-dumbbell text-2xl text-orange-500 group-hover:text-black"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Fitness Coaching</h3>
-                    <p class="text-gray-400">Custom training protocols tailored to your anatomy and goals. Strength, hypertrophy, or fat loss.</p>
-                </div>
-                <div class="glass-card p-10 rounded-3xl text-left hover:border-orange-500/50 transition group">
-                    <div class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition">
-                        <i class="fas fa-graduation-cap text-2xl text-orange-500 group-hover:text-black"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Physical Education</h3>
-                    <p class="text-gray-400">Biomechanics and physiological education. Learn the 'why' behind every movement you perform.</p>
-                </div>
-                <div class="glass-card p-10 rounded-3xl text-left hover:border-orange-500/50 transition group">
-                    <div class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition">
-                        <i class="fas fa-apple-whole text-2xl text-orange-500 group-hover:text-black"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Nutrition Guidance</h3>
-                    <p class="text-gray-400">Macro-based meal planning and metabolic coaching. Eat for performance without sacrificing life.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dynamic Ads/Gallery Section -->
-    <section id="ads" class="py-24 bg-black overflow-hidden">
+    <section id="pricing" class="py-24 bg-zinc-950">
         <div class="container mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-4xl font-black uppercase">Updates & <span class="text-orange-500">Ads</span></h2>
-                    <p class="text-gray-500 mt-2">Latest results and limited-time coaching offers.</p>
-                </div>
-                <div class="flex gap-2">
-                    <button class="w-12 h-12 rounded-full border border-white/10 hover:bg-white hover:text-black transition"><i class="fas fa-chevron-left"></i></button>
-                    <button class="w-12 h-12 rounded-full border border-white/10 hover:bg-white hover:text-black transition"><i class="fas fa-chevron-right"></i></button>
-                </div>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black uppercase">Elite <span class="text-orange-500">Packages</span></h2>
+                <p class="text-gray-500 mt-4 italic">Invest in your greatest asset: Your Body.</p>
             </div>
-            
-            <div class="gallery-container flex gap-6 overflow-x-auto pb-10 snap-x">
-                <!-- Ad 1 -->
-                <div class="min-w-[300px] md:min-w-[450px] snap-center">
-                    <div class="relative rounded-3xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80" alt="Promo" class="w-full h-[500px] object-cover transition duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent p-8 flex flex-col justify-end">
-                            <span class="bg-orange-500 text-black px-3 py-1 rounded-md text-xs font-black w-fit mb-3">NEW PROMO</span>
-                            <h4 class="text-2xl font-bold uppercase">Summer Shred 2024</h4>
-                            <p class="text-gray-300 text-sm">Join the 12-week challenge starting May 1st.</p>
-                        </div>
-                    </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl border-white/5 hover:border-orange-500/30 transition">
+                    <h3 class="text-xl font-bold mb-2">Standard Plan</h3>
+                    <div class="text-4xl font-black mb-6">KSH 5,000<span class="text-sm text-gray-500 font-normal"> /mo</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-400 text-sm">
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>Custom Workout Plan</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>Monthly Progress Review</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>Email Support</li>
+                    </ul>
+                    <a href="#order" class="block text-center border border-white/10 py-3 rounded-xl hover:bg-white hover:text-black transition font-bold uppercase text-xs">Choose Plan</a>
                 </div>
-                <!-- Ad 2 -->
-                <div class="min-w-[300px] md:min-w-[450px] snap-center">
-                    <div class="relative rounded-3xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1594882645126-14020914d58d?auto=format&fit=crop&q=80" alt="Nutrition" class="w-full h-[500px] object-cover transition duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent p-8 flex flex-col justify-end">
-                            <span class="bg-blue-500 text-white px-3 py-1 rounded-md text-xs font-black w-fit mb-3">GUIDE</span>
-                            <h4 class="text-2xl font-bold uppercase">Nutrition E-Book</h4>
-                            <p class="text-gray-300 text-sm">Download our latest guide to muscle-building macros.</p>
-                        </div>
-                    </div>
+                <div class="bg-orange-500 p-8 rounded-3xl transform md:-translate-y-4 shadow-2xl relative overflow-hidden text-black">
+                    <div class="absolute top-4 right-[-35px] bg-white text-black px-10 py-1 rotate-45 font-black text-[10px] uppercase">Popular</div>
+                    <h3 class="text-xl font-bold mb-2">Pro Coaching</h3>
+                    <div class="text-4xl font-black mb-6">KSH 12,000<span class="text-sm text-black/60 font-normal"> /mo</span></div>
+                    <ul class="space-y-4 mb-8 text-black/80 text-sm font-medium">
+                        <li><i class="fas fa-check mr-2"></i>Everything in Standard</li>
+                        <li><i class="fas fa-check mr-2"></i>Detailed Nutrition Guide</li>
+                        <li><i class="fas fa-check mr-2"></i>Weekly WhatsApp Check-ins</li>
+                        <li><i class="fas fa-check mr-2"></i>Supplement Protocol</li>
+                    </ul>
+                    <a href="#order" class="block text-center bg-black text-white py-3 rounded-xl hover:bg-zinc-900 transition font-bold uppercase text-xs">Transform Now</a>
                 </div>
-                <!-- Ad 3 -->
-                <div class="min-w-[300px] md:min-w-[450px] snap-center">
-                    <div class="relative rounded-3xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&q=80" alt="Personal Training" class="w-full h-[500px] object-cover transition duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent p-8 flex flex-col justify-end">
-                            <span class="bg-orange-500 text-black px-3 py-1 rounded-md text-xs font-black w-fit mb-3">UPDATE</span>
-                            <h4 class="text-2xl font-bold uppercase">New Studio Opening</h4>
-                            <p class="text-gray-300 text-sm">Elite 1-on-1 sessions now available in downtown.</p>
-                        </div>
-                    </div>
+                <div class="glass-card p-8 rounded-3xl border-white/5 hover:border-orange-500/30 transition">
+                    <h3 class="text-xl font-bold mb-2">Elite Mastery</h3>
+                    <div class="text-4xl font-black mb-6">KSH 25,000<span class="text-sm text-gray-500 font-normal"> /mo</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-400 text-sm">
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>1-on-1 Personal Training</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>Daily Accountability</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>Form Correction Video Reviews</li>
+                        <li><i class="fas fa-check text-orange-500 mr-2"></i>Advanced Biomechanics Prep</li>
+                    </ul>
+                    <a href="#order" class="block text-center border border-white/10 py-3 rounded-xl hover:bg-white hover:text-black transition font-bold uppercase text-xs">Go Elite</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Order / Request Form -->
+    <section id="results" class="py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black uppercase text-center mb-16">Client <span class="text-orange-500">Transformations</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="relative group rounded-3xl overflow-hidden border border-white/5">
+                    <div class="flex">
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80" class="h-80 w-full object-cover grayscale">
+                            <span class="absolute bottom-2 left-2 bg-black/60 text-[10px] px-2 py-1 uppercase font-bold">Before</span>
+                        </div>
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa20019b?auto=format&fit=crop&q=80" class="h-80 w-full object-cover">
+                            <span class="absolute bottom-2 right-2 bg-orange-500 text-black text-[10px] px-2 py-1 uppercase font-bold">After 12 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-zinc-900/50">
+                        <h4 class="font-bold uppercase text-sm">Muscle Hypertrophy Phase</h4>
+                        <p class="text-xs text-gray-500 mt-1">+6kg lean mass, improved biomechanical alignment.</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-3xl overflow-hidden border border-white/5">
+                    <div class="flex">
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80" class="h-80 w-full object-cover grayscale">
+                            <span class="absolute bottom-2 left-2 bg-black/60 text-[10px] px-2 py-1 uppercase font-bold">Before</span>
+                        </div>
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80" class="h-80 w-full object-cover">
+                            <span class="absolute bottom-2 right-2 bg-orange-500 text-black text-[10px] px-2 py-1 uppercase font-bold">After 16 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-zinc-900/50">
+                        <h4 class="font-bold uppercase text-sm">The "Summer Shred"</h4>
+                        <p class="text-xs text-gray-500 mt-1">-12kg Fat Loss, optimized metabolic rate.</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-3xl overflow-hidden border-2 border-dashed border-white/10 flex flex-col items-center justify-center h-full p-12 text-center">
+                    <div class="w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-plus text-orange-500"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-500 uppercase tracking-widest text-sm">Your Story Next</h4>
+                    <p class="text-xs text-gray-600 mt-2">Start your journey today and join the elite ranks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="order" class="py-24 bg-zinc-950">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row gap-16 items-center">
                 <div class="lg:w-1/2">
                     <h2 class="text-5xl font-black uppercase mb-6 leading-tight">Start Your <span class="text-orange-500">Order</span></h2>
-                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">Ready to change? Select your service and submit your details. Our team will contact you within 24 hours to schedule your initial assessment.</p>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">Ready to change? Select your service and submit your details. Our team will contact you within 24 hours.</p>
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500">
-                                <i class="fas fa-check"></i>
-                            </div>
+                            <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500"><i class="fas fa-check"></i></div>
                             <span class="text-gray-300">Customized Workout Dashboards</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="text-gray-300">Weekly Progress Check-ins</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="text-gray-300">24/7 Messaging Support</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="lg:w-1/2 w-full">
                     <div class="glass-card p-8 md:p-12 rounded-[40px] shadow-2xl">
-                        <form onsubmit="event.preventDefault(); alert('Order received! We will contact you soon.');">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="06cd15b7-1ba5-4b62-a857-80a1bc331f0a">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label class="block text-xs font-bold text-gray-500 uppercase mb-2 tracking-widest">Full Name</label>
-                                    <input type="text" placeholder="John Doe" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition" required>
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold text-gray-500 uppercase mb-2 tracking-widest">Email Address</label>
-                                    <input type="email" placeholder="john@example.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition" required>
-                                </div>
+                                <input type="text" name="name" placeholder="Full Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition" required>
+                                <input type="email" name="email" placeholder="Email Address" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition" required>
                             </div>
                             <div class="mb-6">
-                                <label class="block text-xs font-bold text-gray-500 uppercase mb-2 tracking-widest">Select Service</label>
-                                <select class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition appearance-none">
-                                    <option class="bg-zinc-900">Fitness Coaching (1-on-1)</option>
-                                    <option class="bg-zinc-900">Nutrition Mastery Plan</option>
-                                    <option class="bg-zinc-900">Full Transformation (All-in-One)</option>
-                                    <option class="bg-zinc-900">Educational Seminar Request</option>
+                                <select name="package" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition text-gray-400">
+                                    <option value="standard" class="bg-zinc-900 text-white">Standard Coaching (5,000/-)</option>
+                                    <option value="pro" class="bg-zinc-900 text-white" selected>Pro Coaching (12,000/-)</option>
+                                    <option value="elite" class="bg-zinc-900 text-white">Elite Mastery (25,000/-)</option>
                                 </select>
                             </div>
-                            <div class="mb-8">
-                                <label class="block text-xs font-bold text-gray-500 uppercase mb-2 tracking-widest">Your Goals</label>
-                                <textarea placeholder="Tell us what you want to achieve..." rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition"></textarea>
-                            </div>
+                            <textarea name="message" placeholder="What are your fitness goals?" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:border-orange-500 outline-none transition mb-8" required></textarea>
                             <button type="submit" class="w-full bg-white text-black font-black py-5 rounded-2xl hover:bg-orange-500 transition orange-glow uppercase tracking-widest">Submit Request</button>
                         </form>
                     </div>
@@ -213,42 +209,32 @@
         </div>
     </section>
 
-    <!-- Social Hub -->
-    <footer class="bg-black border-t border-white/10 py-16">
+    <footer class="bg-black border-t border-white/10 py-16 text-center md:text-left">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
-                <div class="text-center md:text-left">
-                    <div class="text-3xl font-black text-orange-500 mb-4">WANDIEMA</div>
-                    <p class="text-gray-500 max-w-sm">Leading the industry in science-backed physical education and lifestyle transformation.</p>
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <div class="text-3xl font-black text-orange-500 mb-4">NYMNDIEMA</div>
+                    <p class="text-gray-500 text-sm italic">"Beyond the limits."</p>
                 </div>
-                
-                <div class="flex flex-col items-center gap-6">
-                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-gray-500">Connect with us</h5>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-xl hover:text-orange-500 hover:-translate-y-1 transition"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-xl hover:text-blue-500 hover:-translate-y-1 transition"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-xl hover:text-orange-500 hover:-translate-y-1 transition"><i class="fas fa-globe"></i></a>
-                        <a href="#" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-xl hover:text-red-500 hover:-translate-y-1 transition"><i class="fab fa-youtube"></i></a>
+                <div>
+                    <h5 class="text-orange-500 font-bold uppercase text-xs mb-6">Connect</h5>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://instagram.com/nymndiema" target="_blank" class="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:text-orange-500 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254759500240" target="_blank" class="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:text-[#25D366] transition"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-
-                <div class="text-center md:text-right">
-                    <div class="text-sm font-bold mb-2">Primary Website</div>
-                    <a href="https://wandiema-com.github.io/nymndiema/" class="text-orange-500 hover:underline">https://wandiema-com.github.io/nymndiema/</a>
-                    <div class="text-gray-600 text-xs mt-8 uppercase tracking-widest">© 2024 NYMNDIEMA SYSTEMS</div>
+                <div class="col-span-2 text-right">
+                    <p class="text-xs text-gray-600 uppercase tracking-widest font-black">© 2026 NYMNDIEMA SYSTEMS. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
